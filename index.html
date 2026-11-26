@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div id="body">
+    <div class="cover">
+    <div id="top"><h1 id="question"></h1> 
+</div>
+
+<div id="main">
+
+<div id="chapter1" onclick="filla()">
+<div id="circle1"></div>
+<label id="a"></label>
+</div>
+<div id="chapter2" onclick="fillb()">
+<div id="circle2"></div>
+<label id="b"></label>
+</div>
+<div id="chapter3" onclick="fillc()">
+<div id="circle3"></div>
+<label id="c"></label>
+</div>
+<div id="chapter4" onclick="filld()">
+<div id="circle4"></div>
+<label id="d"></label>
+</div>
+
+
+</div>
+<button id="btn2"  onclick="submit()">Next</button>
+</div>
+</div>
+<script>let box = 1;
+let click = 1;
+let check = 0;
+let count = 0;    
+document.getElementById("question").textContent = "Select Topic"
+document.getElementById("a").textContent = "HTML"
+document.getElementById("b").textContent = "CSS"
+document.getElementById("c").textContent = "Java Script"
+document.getElementById("d").textContent = "Advance HTML"
+
+        // A //
+    function filla() { 
+     let fill1 = document.getElementById('circle1');
+     let fill2 = document.getElementById('circle2');
+     let fill3 = document.getElementById('circle3');
+     let fill4 = document.getElementById('circle4');
+     let chapter1 = document.getElementById('chapter1');
+     let chapter2 = document.getElementById('chapter2');
+     let chapter3 = document.getElementById('chapter3');
+     let chapter4 = document.getElementById('chapter4');
+click++
+        box++
+        check=1
+    let boxfill = box%2;
+        if(boxfill<=0 || click>2){
+    fill1.style.backgroundColor= "#8E1523"
+    fill2.style.backgroundColor= ""
+    fill3.style.backgroundColor= ""
+    fill4.style.backgroundColor= ""
+    chapter1.style.backgroundColor= "#8e15235f"
+    chapter2.style.backgroundColor= ""
+    chapter3.style.backgroundColor= ""
+    chapter4.style.backgroundColor= ""
+    fill1.style.borderColor= "#8E1523"
+    fill2.style.borderColor= "#d8c4a0"
+    fill3.style.borderColor= "#d8c4a0"
+    fill4.style.borderColor= "#d8c4a0"
+    chapter1.style.borderColor= "#8E1523"    
+    chapter2.style.borderColor= ""    
+    chapter3.style.borderColor= ""    
+    chapter4.style.borderColor= ""    
+        }
+        
+        else{
+    fill1.style.backgroundColor= "white"
+
+        }
+
+}
+    // B //
+    function fillb() { 
+     let fill1 = document.getElementById('circle1');
+     let fill2 = document.getElementById('circle2');
+     let fill3 = document.getElementById('circle3');
+     let fill4 = document.getElementById('circle4');
+     let chapter1 = document.getElementById('chapter1');
+     let chapter2 = document.getElementById('chapter2');
+     let chapter3 = document.getElementById('chapter3');
+     let chapter4 = document.getElementById('chapter4');
+     click++
+        box++
+                check=2
+    let boxfill = box%2;
+        if(boxfill<=0 || click>2){
+    fill1.style.backgroundColor= ""
+    fill2.style.backgroundColor= "#8E1523"
+    fill3.style.backgroundColor= ""
+    fill4.style.backgroundColor= ""
+    chapter1.style.backgroundColor= ""
+    chapter2.style.backgroundColor= "#8e15235f"
+    chapter3.style.backgroundColor= ""
+    chapter4.style.backgroundColor= ""
+    fill1.style.borderColor= "#d8c4a0"
+    fill2.style.borderColor= "#8E1523"
+    fill3.style.borderColor= "#d8c4a0"
+    fill4.style.borderColor= "#d8c4a0"
+    chapter1.style.borderColor= ""    
+    chapter2.style.borderColor= "#8E1523"    
+    chapter3.style.borderColor= ""    
+    chapter4.style.borderColor= ""        }
+        else{
+    fill2.style.backgroundColor= "white"
+
+        }
+    }
+    // C //
+    function fillc() { 
+     let fill1 = document.getElementById('circle1');
+     let fill2 = document.getElementById('circle2');
+     let fill3 = document.getElementById('circle3');
+     let fill4 = document.getElementById('circle4');
+     let chapter1 = document.getElementById('chapter1');
+     let chapter2 = document.getElementById('chapter2');
+     let chapter3 = document.getElementById('chapter3');
+     let chapter4 = document.getElementById('chapter4');click++
+        box++
+                check=3
+    let boxfill = box%2;
+        if(boxfill<=0 || click>2){
+    fill1.style.backgroundColor= ""
+    fill2.style.backgroundColor= ""
+    fill3.style.backgroundColor= "#8E1523"
+    fill4.style.backgroundColor= ""
+    chapter1.style.backgroundColor= ""
+    chapter2.style.backgroundColor= ""
+    chapter3.style.backgroundColor= "#8e15235f"
+    chapter4.style.backgroundColor= ""    
+    fill1.style.borderColor= "#d8c4a0"
+    fill2.style.borderColor= "#d8c4a0"
+    fill3.style.borderColor= "#8E1523"
+    fill4.style.borderColor= "#d8c4a0" 
+    chapter1.style.borderColor= ""    
+    chapter2.style.borderColor= ""    
+    chapter3.style.borderColor= "#8E1523"    
+    chapter4.style.borderColor= ""       }
+        else{
+    fill3.style.backgroundColor= "white"
+
+        }
+    }
+    // D //
+    function filld() { 
+     let fill1 = document.getElementById('circle1');
+     let fill2 = document.getElementById('circle2');
+     let fill3 = document.getElementById('circle3');
+     let fill4 = document.getElementById('circle4');
+     let chapter1 = document.getElementById('chapter1');
+     let chapter2 = document.getElementById('chapter2');
+     let chapter3 = document.getElementById('chapter3');
+     let chapter4 = document.getElementById('chapter4');
+     click++
+        box++
+                check=4
+    let boxfill = box%2;
+        if(boxfill<=0 || click>2){
+    fill1.style.backgroundColor= ""
+    fill2.style.backgroundColor= ""
+    fill3.style.backgroundColor= ""
+    fill4.style.backgroundColor= "#8E1523"
+    chapter1.style.backgroundColor= ""
+    chapter2.style.backgroundColor= ""
+    chapter3.style.backgroundColor= ""
+    chapter4.style.backgroundColor= "#8e15235f"
+    fill1.style.borderColor= "#d8c4a0"
+    fill2.style.borderColor= "#d8c4a0"
+    fill3.style.borderColor= "#d8c4a0"
+    fill4.style.borderColor= "#8E1523"
+    chapter1.style.borderColor= ""    
+    chapter2.style.borderColor= ""    
+    chapter3.style.borderColor= ""    
+    chapter4.style.borderColor= "#8E1523"        }
+        else{
+    fill4.style.backgroundColor= "white"
+
+        }
+    }
+
+function submit() {
+    if(check==1){
+        window.location.href= "html.html";
+    }
+    else if(check==2){
+        window.location.href= "css.html";
+    } 
+       else if(check==3){
+        window.location.href= "javascript.html";
+    }
+        else if(check==4){
+        window.location.href= "advancehtml.html";
+    }
+}
+</script></body>
+</html>
